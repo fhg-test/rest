@@ -1,17 +1,14 @@
-import { User } from '@fhg-test/core';
+import { RBAC } from '@fhg-test/core';
 
 import { Resource } from '../base';
 import { getResourceEndpoint } from '../utils/endpoints';
 import request, { QueryParams } from '../utils/request';
 
-import * as rbac from './user.rbac';
-import * as sessions from './user.sessions';
-
 function getBaseUrl(): string {
-  return getResourceEndpoint(Resource.User);
+  return getResourceEndpoint([Resource.User, Resource.RBAC]);
 }
 
-async function get(queryParams?: QueryParams, cookie?: any): Promise<User> {
+async function get(queryParams?: QueryParams, cookie?: any): Promise<RBAC> {
   return await request.get({
     queryParams,
     cookie,
@@ -19,4 +16,4 @@ async function get(queryParams?: QueryParams, cookie?: any): Promise<User> {
   });
 }
 
-export { get, rbac, sessions };
+export { get };
