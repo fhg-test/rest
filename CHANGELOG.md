@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.3.0](https://github.com/fhg-test/rest/compare/v0.2.0...v0.3.0) (2020-08-23)
+
+
+### Features
+
+* remove rbac & sessions, create user.rbac & user.sessions, remove unused apis in booking-statuses & booking-types ([256a9a0](https://github.com/fhg-test/rest/commit/256a9a0))
+
+
+
 ## [0.2.0](https://github.com/fhg-test/rest/compare/v0.1.0...v0.2.0) (2020-08-23)
 
 
