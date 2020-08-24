@@ -22,15 +22,6 @@ async function list(queryParams?: QueryParams): Promise<Booking[]> {
   });
 }
 
-async function count(queryParams?: QueryParams): Promise<number> {
-  const { count } = await request.get({
-    queryParams,
-    url: `${getBaseUrl()}/count`,
-  });
-
-  return count;
-}
-
 async function get(id: string, queryParams?: QueryParams): Promise<Booking> {
   return await request.get({
     queryParams,
@@ -45,10 +36,10 @@ async function update({ id, ...data }: Booking): Promise<Booking> {
   });
 }
 
-async function confirm(id: string, date: Date): Promise<Booking> {
+async function approve(id: string, date: Date): Promise<Booking> {
   return await request.patch({
-    url: `${getBaseUrl()}/${id}/confirmation`,
-    body: { confirmedDate: date },
+    url: `${getBaseUrl()}/${id}/approval`,
+    body: { approvedDate: date },
   });
 }
 
@@ -58,10 +49,4 @@ async function reject(id: string): Promise<Booking> {
   });
 }
 
-async function del(id: string): Promise<Booking> {
-  return await request.del({
-    url: `${getBaseUrl()}/${id}`,
-  });
-}
-
-export { list, count, create, get, update, confirm, reject, del };
+export { list, create, get, update, approve, reject };

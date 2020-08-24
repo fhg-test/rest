@@ -41,10 +41,10 @@
     express "^4.17.1"
     http-status-codes "^1.3.2"
 
-"@fhg-test/core@^0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@fhg-test/core/-/core-0.2.2.tgz#6beba4cf3a7bd4d07c83a2e3782553bc21332fd1"
-  integrity sha512-+KIuuRmRtI/Un9UuB51S+FVjQv8wNIUo11LsDGEWn5mzrszjNDsoljoklD/e6UyDvw/h4KmWX3SgaIomY+U/gQ==
+"@fhg-test/core@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@fhg-test/core/-/core-0.3.0.tgz#8e35242e1091616cf6c5f08df25a7d0d384c0469"
+  integrity sha512-70aN1tgb6DbcjOypGJeRzSV3RJHCQOyEqzSW3F0Mg3l7aEHzAg6YoKqu/wxGR40KbYZC+OsF5ozbua7ngh0NGA==
 
 "@types/color-name@^1.1.1":
   version "1.1.1"
