@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.5.0](https://github.com/fhg-test/rest/compare/v0.4.2...v0.5.0) (2020-08-24)
+
+
+### Features
+
+* **booking:** upgrade @fhg-test/core as Booking model updated, rename confirm api to approve, remove count & del apis ([416bde0](https://github.com/fhg-test/rest/commit/416bde0))
+
+
+
 ### [0.4.2](https://github.com/fhg-test/rest/compare/v0.4.1...v0.4.2) (2020-08-24)
 
 
