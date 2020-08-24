@@ -1,6 +1,6 @@
 {
   "name": "@fhg-test/rest",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "API Client",
   "homepage": "https://github.com/fhg-test/rest",
   "bugs": "https://github.com/fhg-test/rest/issues",
