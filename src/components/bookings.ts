@@ -36,10 +36,10 @@ async function update({ id, ...data }: Booking): Promise<Booking> {
   });
 }
 
-async function approve(id: string, date: Date): Promise<Booking> {
+async function approve(id: string, dateIndex: number): Promise<Booking> {
   return await request.patch({
     url: `${getBaseUrl()}/${id}/approval`,
-    body: { approvedDate: date },
+    body: { approvedDate: dateIndex },
   });
 }
 
